@@ -2,13 +2,13 @@
   "name": "pern_first",
   "version": "1.0.0",
   "description": "",
-  "main": "backend/server.js",
+  "main": "BACKEND/SERVER.js",
   
   
    "scripts": {
         "dev": "concurrently \"npm run dev --prefix frontend\" \"npm start --prefix backend\"\"nodemon BACKEND/SERVER.js",
         "build":"npm install && npm install --prefix frontend && npm run build --prefix frontend",
-        "start":"node backend/server.js"
+        "start":"node BACKEND/SERVER.js"
       }  
 
 ,
