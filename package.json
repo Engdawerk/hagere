@@ -2,7 +2,7 @@
   "name": "pern_first",
   "version": "1.0.0",
   "description": "",
-  "main": "BACKEND/SERVER.js",
+  "main": "backend/server.js",
   
   
    "scripts": {
