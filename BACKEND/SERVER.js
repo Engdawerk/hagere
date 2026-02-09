@@ -91,7 +91,7 @@ initDB().then(() => {
         //console.log("Server is running on port " + PORT);
    // });
     app.listen(PORT, '0.0.0.0', () => {
-       console.log(`Server running on port ${port}`);
+       console.log(`Server running on port ${PORT}`);
     });
 }
 
