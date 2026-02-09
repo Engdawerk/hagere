@@ -51,16 +51,17 @@ app.use(async (req, res,next) =>{
         }else {
             res.status(403).json({ error: "Forbidden"});
         }
-        return
+        
      }
      // check for spoofed bots
      if (decision.results.some((result) => result.reason.isBot() && result.reason.isSpoofed())){
         res.status(403).json({ error: "Spoofed bot detected"});
-        return; 
+        
     }
-    next()
+    next();
     }catch (error){
-
+       console.error("Arcjet error:", error);
+        next(); // <— IMPORTANT: Don't break the app if Arcjet fails
     }
 })
 
