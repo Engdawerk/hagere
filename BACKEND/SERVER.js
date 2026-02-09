@@ -11,7 +11,7 @@ import { sql } from "./config/db.js";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000; // Use environment variable or default to 3000
+const PORT = process.env.PORT || 10000; // Use environment variable or default to 3000
 const __dirname = path.resolve();
 app.use(cors()); // Uncomment if you're using CORS
 app.use(helmet({
